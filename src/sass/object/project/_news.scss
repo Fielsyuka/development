@@ -1,0 +1,15 @@
+.p-news {
+  &__time {
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+    color: #ccc;
+    font-size: rem(13);
+  }
+  &__excerpt {
+    margin-bottom: 15px;
+    font-size: rem(14);
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

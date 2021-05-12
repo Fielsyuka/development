@@ -1,0 +1,51 @@
+.p-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: rem(12) 0;
+  z-index: 20;
+  @include media-up(md) {
+    padding: rem(24) 0;
+  }
+  @include media-up(lg) {
+    padding: rem(28) 0;
+  }
+  &__inner {
+    @include media-up(md) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__logo {
+    text-align: center;
+    a {
+      display: inline-block;
+    }
+    @include media-up(md) {
+      text-align-last: left;
+    }
+  }
+  &__hamburger {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 2.5%;
+    @include media-up(md) {
+      display: none;
+    }
+  }
+  &__nav {
+    @include media-up(md) {
+      width: 86.4%;
+    }
+  }
+  &__cart {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 2.5%;
+    margin: auto 0;
+  }
+}

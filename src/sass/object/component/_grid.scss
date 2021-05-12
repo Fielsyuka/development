@@ -1,0 +1,9 @@
+.c-grid {
+  display: flex;
+  &__item {
+    width: 200px;
+    & + & {
+      margin-left: 15px;
+    }
+  }
+}

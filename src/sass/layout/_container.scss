@@ -1,0 +1,12 @@
+.l-container {
+  width: 95%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  &._sp-full {
+    width: 100%;
+    @include media-up(md) {
+      width: 95%;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+// Breakpoint
+@mixin media-up($breakpoint: md) {
+  @media #{map-get($breakpoint-up, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin media-down($breakpoint: md) {
+  @media #{map-get($breakpoint-down, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin none-appearance {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none transparent;
+  background-clip: padding-box;
+  color: inherit;
+  font-size: inherit;
+  vertical-align: middle;
+  box-sizing: border-box;
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+@mixin placeholder-color($color) {
+  &:placeholder-shown {
+    color: $color;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  &:-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin triangle($color: #000, $width: 10px, $height: 10px, $dir: top) {
+  width: 0;
+  height: 0;
+
+  @if $dir== "top" {
+    border-width: 0 #{$width/2} #{$height} #{$width/2};
+    border-color: transparent transparent $color transparent;
+  } @else if $dir== "bottom" {
+    border-width: #{$height} #{$width/2} 0 #{$width/2};
+    border-color: $color transparent transparent transparent;
+  } @else if $dir== "right" {
+    border-width: #{$height/2} 0 #{$height/2} #{$width};
+    border-color: transparent transparent transparent $color;
+  } @else {
+    border-width: #{$height/2} #{$width} #{$height/2} 0;
+    border-color: transparent $color transparent transparent;
+  }
+
+  border-style: solid;
+}

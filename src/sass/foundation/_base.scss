@@ -1,0 +1,25 @@
+@import "variables";
+@import "mixin";
+
+/*
+  Base
+----------------------------------------------- */
+html {
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #eee;
+  line-height: 1.5;
+  color: $color-text-main;
+  font-size: 100%;
+  font-weight: normal;
+  font-family: $font-base;
+}
+
+img {
+  vertical-align: bottom;
+}

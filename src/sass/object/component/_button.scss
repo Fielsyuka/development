@@ -1,0 +1,43 @@
+.c-button-primary {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  max-width: 320px;
+  margin: rem(24) auto 0;
+  padding: 1.1em 1.4em;
+  background-color: #333;
+  border: 2px solid #333;
+  color: #fff;
+  font-size: rem(14);
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.2s, color 0.2s;
+  @include media-up(md) {
+    margin: rem(36) auto 0;
+  }
+  @include media-up(md) {
+    margin: rem(40) auto 0;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1.35em;
+    right: 2em;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    transition: border-color 0.2s;
+  }
+  &:hover {
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.2s, color 0.2s;
+    &:after {
+      border-color: #333;
+      transition: border-color 0.2s;
+    }
+  }
+}

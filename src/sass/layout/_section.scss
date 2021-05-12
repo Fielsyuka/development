@@ -1,0 +1,12 @@
+.l-section {
+  padding: rem(20) 0 rem(24);
+  @include media-up(md) {
+    padding: rem(32) 0 rem(40);
+  }
+  @include media-up(lg) {
+    padding: rem(36) 0 rem(56);
+  }
+  &._colored {
+    background-color: $color-secondary;
+  }
+}

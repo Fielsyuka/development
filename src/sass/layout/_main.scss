@@ -1,0 +1,9 @@
+.l-main {
+  padding-top: rem(48);
+  @include media-up(md) {
+    padding-top: rem(72);
+  }
+  @include media-up(lg) {
+    padding-top: rem(80);
+  }
+}

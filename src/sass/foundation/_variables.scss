@@ -1,0 +1,41 @@
+// Break Point
+$breakpoint-up: (
+  "sm": "(min-width: 576px)",
+  "md": "(min-width: 768px)",
+  "lg": "(min-width: 992px)",
+  "xl": "(min-width: 1200px)",
+) !default;
+
+$breakpoint-down: (
+  "sm": "(max-width: 575px)",
+  "md": "(max-width: 767px)",
+  "lg": "(max-width: 991px)",
+  "xl": "(max-width: 1199px)",
+) !default;
+
+// Colors
+$color-primary: #fff;
+$color-secondary: #fafafa;
+$color-accent: #212121;
+$color-text-main: #333;
+$color-text-accent: #777;
+$color-gray-100: #e0e0e0;
+$color-gray-200: #9e9e9e;
+$color-gray-300: #616161;
+$color-gray-400: #ddd;
+$color-cat-men: #1a237e;
+$color-cat-women: #b71c1c;
+$color-cat-kids: #fbc02d;
+
+// Typography
+$base-font-size: 16;
+@function rem($pixels, $context: $base-font-size) {
+  @return $pixels / $context * 1rem;
+}
+
+//Web Font
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
+
+// Font
+$font-base: "Noto Sans JP", "游ゴシック", sans-serif;
+$font-accent: "Roboto", sans-serif;

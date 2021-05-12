@@ -1,0 +1,24 @@
+.c-title-primary {
+  margin-bottom: rem(20);
+  text-align: center;
+  &__en {
+    display: block;
+    font-size: rem(32);
+    font-weight: 700;
+    line-height: 1.3125;
+  }
+  &__ja {
+    display: block;
+    font-size: rem(12);
+    font-weight: 500;
+  }
+  @include media-up(md) {
+    margin-bottom: rem(40);
+    &__en {
+      font-size: rem(48);
+    }
+    &__ja {
+      font-size: medium;
+    }
+  }
+}

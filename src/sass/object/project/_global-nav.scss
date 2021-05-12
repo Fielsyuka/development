@@ -1,0 +1,54 @@
+.p-global-nav {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: rem(48);
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: $color-primary;
+  transition: opacity 0.2s, visibility 0.2s;
+  @include media-up(md) {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    top: rem(72);
+    background-color: transparent;
+  }
+  @include media-up(lg) {
+    top: rem(80);
+  }
+  li {
+    & + li {
+      border-top: 1px solid $color-gray-100;
+    }
+    @include media-up(md) {
+      float: left;
+      & + li {
+        border-top: 0;
+      }
+    }
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    padding: 1em 1.5em;
+    color: inherit;
+    font-family: $font-accent;
+    font-weight: 700;
+    transition: background-color 0.2s, color 0.2s;
+    &:hover {
+      background-color: #000;
+      color: #fff;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    @include media-up(md) {
+      padding: 0.2em 1.25em;
+    }
+  }
+}
+body.is-active-drawer .p-global-nav {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s, visibility 0.2s;
+}
