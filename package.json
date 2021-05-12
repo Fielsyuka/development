@@ -9,11 +9,18 @@
     "dev": "npm run cleanup && webpack --config ./webpack.dev.js",
     "prod": "npm run cleanup && webpack --config ./webpack.prod.js"
   },
+  "browserlisdt": [
+    "defaults"
+  ],
   "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
     "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
     "browser-sync": "^2.26.14",
     "browser-sync-webpack-plugin": "^2.3.0",
     "copy-webpack-plugin": "^8.1.1",
+    "core-js": "3",
     "css-declaration-sorter": "^6.0.3",
     "css-loader": "^5.2.4",
     "css-mqpacker": "^7.0.0",
@@ -21,6 +28,7 @@
     "mini-css-extract-plugin": "^1.6.0",
     "postcss": "^8.2.15",
     "postcss-loader": "^5.2.0",
+    "regenerator-runtime": "^0.13.7",
     "rimraf": "^3.0.2",
     "sass": "^1.32.12",
     "sass-loader": "^11.1.0",
