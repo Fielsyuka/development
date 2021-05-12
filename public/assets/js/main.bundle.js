@@ -1,32 +1,31 @@
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/sass/style.scss":
-/*!*****************************!*\
-  !*** ./src/sass/style.scss ***!
-  \*****************************/
+/***/ "./src/assets/sass/style.scss":
+/*!************************************!*\
+  !*** ./src/assets/sass/style.scss ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://development/./src/sass/style.scss?");
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
-/***/ "./src/js/main.js":
-/*!************************!*\
-  !*** ./src/js/main.js ***!
-  \************************/
+/***/ "./src/assets/js/main.js":
+/*!*******************************!*\
+  !*** ./src/assets/js/main.js ***!
+  \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/style.scss */ \"./src/sass/style.scss\");\n\n\nconsole.log(\"test\");\n\n\n//# sourceURL=webpack://development/./src/js/main.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _sass_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/style.scss */ "./src/assets/sass/style.scss");
+
+
+console.log("test");
+
 
 /***/ })
 
@@ -72,8 +71,10 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sas
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/js/main.js");
+/******/ 	__webpack_require__("./src/assets/js/main.js");
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/assets/sass/style.scss");
 /******/ 	
 /******/ })()
 ;
+//# sourceMappingURL=main.bundle.js.map
