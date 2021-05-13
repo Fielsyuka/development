@@ -1,0 +1,77 @@
+.c-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.c-modal__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: fade-in forwards 0.2s;
+  z-index: 1000;
+}
+
+.c-modal__content {
+  position: absolute;
+  overflow: hidden;
+  // overflow-y: auto; //スクロールされない領域が不要な場合はここをautoにしてinnerを削除
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 85%;
+  max-height: 76vh;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 30px;
+  z-index: 2000;
+}
+
+.c-modal__inner {
+  overflow: hidden;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 912px;
+  height: calc(100% - 4em);
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.c-modal__close {
+  position: absolute;
+  top: 20px;
+  right: 10%;
+}
+
+.c-btn-close {
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+  top: 20px;
+  right: 4%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  background: none;
+  width: 28px;
+  height: 28px;
+  color: #fff;
+}
+
+@include media-up(md) {
+  .c-btn-close {
+    width: 24px;
+    height: 24px;
+    top: 10px;
+  }
+}
